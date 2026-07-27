@@ -1230,7 +1230,7 @@ function Footer() {
   return (
     <footer className="border-t border-hairline bg-surface/40 pt-16 pb-12">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
-        <div className="grid gap-10 md:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-5">
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-2.5">
               <img
@@ -1259,22 +1259,12 @@ function Footer() {
 
           <div>
             <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">
-              Platform & Specs
+              Platform
             </div>
             <ul className="mt-4 space-y-2.5 text-xs sm:text-sm">
               <li>
                 <a href="#platform" className="text-foreground/80 hover:text-teal transition-colors">
                   TwinForge Engine
-                </a>
-              </li>
-              <li>
-                <a href="#products" className="text-foreground/80 hover:text-teal transition-colors">
-                  RangeOS Cyber-Range
-                </a>
-              </li>
-              <li>
-                <a href="#products" className="text-foreground/80 hover:text-teal transition-colors">
-                  AdversaryAI Red-Team
                 </a>
               </li>
               <li>
@@ -1287,7 +1277,7 @@ function Footer() {
 
           <div>
             <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">
-              Governance & Research
+              Compliance
             </div>
             <ul className="mt-4 space-y-2.5 text-xs sm:text-sm">
               <li>
@@ -1303,6 +1293,29 @@ function Footer() {
               <li>
                 <a href="#sectors" className="text-foreground/80 hover:text-teal transition-colors">
                   CII Sector Guidelines
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="text-foreground/80 hover:text-teal transition-colors">
+                  Compliance Sandbox
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">
+              Products
+            </div>
+            <ul className="mt-4 space-y-2.5 text-xs sm:text-sm">
+              <li>
+                <a href="#products" className="text-foreground/80 hover:text-teal transition-colors">
+                  RangeOS Cyber-Range
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="text-foreground/80 hover:text-teal transition-colors">
+                  AdversaryAI Red-Team
                 </a>
               </li>
               <li>
