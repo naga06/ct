@@ -1,7 +1,7 @@
 {
   // Wrangler configuration for Cloudflare Workers deployment
   // See: https://developers.cloudflare.com/workers/wrangler/configuration/
-  "name": "nextjs-app",
+  "name": "cybertwinx",
   "main": ".open-next/worker.js",
   "compatibility_date": "2024-12-30",
   "compatibility_flags": ["nodejs_compat"],
