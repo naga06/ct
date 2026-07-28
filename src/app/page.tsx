@@ -1047,19 +1047,36 @@ function CTA() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.email) return;
 
     setSubmitting(true);
 
-    setTimeout(() => {
-      setSubmitting(false);
+    try {
+      const res = await fetch("/api/briefing", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data?.error || "Submission failed");
+      }
+
       setSubmitted(true);
       toast.success("Briefing Request Received", {
         description: "Our technical team will review your organization details and get in touch under NDA within 1 business day.",
       });
-    }, 1200);
+    } catch (err) {
+      console.error("[Briefing form] Error:", err);
+      toast.error("Submission failed", {
+        description: "Please try again or email us directly at hello@cybertwinx.com",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
