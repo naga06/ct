@@ -25,7 +25,6 @@ import {
   ArrowUp,
   Play,
   Pause,
-  Sparkles,
   Loader2,
   Sun,
   Moon,
@@ -44,7 +43,6 @@ export default function Home() {
       <Nav />
       <main id="main-content">
         <Hero />
-        <LogoStrip />
         <Positioning />
         <Platform onSelectPrimitive={setActiveModalPrimitive} />
         <Products onSelectProduct={setActiveModalProduct} />
@@ -577,42 +575,6 @@ function Hero() {
   );
 }
 
-/* ---------------- LOGO STRIP ---------------- */
-function LogoStrip() {
-  const partners = [
-    { name: "Cyber-Physical Security Labs", desc: "Center for Research in Cyber Security" },
-    { name: "CSA Singapore", desc: "Cyber Security Agency of Singapore" },
-    { name: "CRPO", desc: "Cyber Research Programme Office" },
-    { name: "EnterpriseSG", desc: "Enterprise Singapore Innovation" },
-    { name: "OT-ISAC", desc: "Operational Tech ISAC" },
-    { name: "Maritime Cyber Security Alliance", desc: "Maritime Cyber Security Testbed Alliance" },
-  ];
-
-  return (
-    <section className="border-y border-hairline bg-surface/30 py-8">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground font-semibold flex items-center gap-1.5">
-            <Sparkles className="h-3.5 w-3.5 text-teal" /> Built with & validated by
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-            {partners.map((partner) => (
-              <div
-                key={partner.name}
-                className="group relative cursor-default"
-                title={partner.desc}
-              >
-                <span className="font-display text-sm sm:text-base font-semibold tracking-tight text-muted-foreground/90 transition-colors group-hover:text-teal">
-                  {partner.name}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* ---------------- POSITIONING & COMPARISON MATRIX ---------------- */
 function Positioning() {
