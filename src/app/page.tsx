@@ -250,7 +250,7 @@ function Hero() {
 
   const nodesInfo: Record<string, { name: string; type: string; status: string; invariants: string; load: string }> = {
     "AquaPure-01": {
-      name: "Secure Water Treatment",
+      name: "Pure Water Treatment",
       type: "6-Stage Physical Water Plant",
       status: "SECURE",
       invariants: "42 Invariants Active",
@@ -513,25 +513,25 @@ function Hero() {
                         <tbody className="divide-y divide-hairline font-mono text-[11px]">
                           <tr>
                             <td className="p-2 text-teal">INV-P1-TANK</td>
-                            <td className="p-2 text-foreground">LIT-101 Level</td>
+                            <td className="p-2 text-foreground">LIT-1101 Level</td>
                             <td className="p-2 text-foreground/90">782 mm</td>
                             <td className="p-2 text-right font-bold text-teal">PASS</td>
                           </tr>
                           <tr>
                             <td className="p-2 text-teal">INV-P2-FLOW</td>
-                            <td className="p-2 text-foreground">FIT-201 Rate</td>
+                            <td className="p-2 text-foreground">FIT-1201 Rate</td>
                             <td className="p-2 text-foreground/90">2.4 m³/h</td>
                             <td className="p-2 text-right font-bold text-teal">PASS</td>
                           </tr>
                           <tr>
                             <td className="p-2 text-teal">INV-P3-VALVE</td>
-                            <td className="p-2 text-foreground">MV-101 Interlock</td>
+                            <td className="p-2 text-foreground">MV-1101 Interlock</td>
                             <td className="p-2 text-foreground/90">CLOSED (1)</td>
                             <td className="p-2 text-right font-bold text-teal">PASS</td>
                           </tr>
                           <tr>
                             <td className="p-2 text-teal">INV-P4-PRESS</td>
-                            <td className="p-2 text-foreground">PIT-301 Pressure</td>
+                            <td className="p-2 text-foreground">PIT-1301 Pressure</td>
                             <td className="p-2 text-foreground/90">4.1 bar</td>
                             <td className="p-2 text-right font-bold text-teal">PASS</td>
                           </tr>
